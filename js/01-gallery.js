@@ -37,4 +37,4 @@ function closeModal(event) {
   }
 }
 
-https: console.log(galleryItems);
+// https: console.log(galleryItems);
