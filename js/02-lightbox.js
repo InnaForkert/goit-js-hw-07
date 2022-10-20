@@ -14,14 +14,7 @@ const gallery = galleryItems
 
 galleryDiv.innerHTML = gallery;
 
-galleryDiv.addEventListener("click", openImg);
-
-function openImg(event) {
-  event.preventDefault();
-  console.log(event.target.alt);
-  const lightbox = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
-  lightbox.open();
-}
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
